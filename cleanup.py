@@ -1,3 +1,0 @@
-# single process
-
-print("cleanup")
