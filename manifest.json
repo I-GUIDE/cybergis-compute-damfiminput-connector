@@ -22,12 +22,12 @@
     "require_upload_data": true,
     "param_rules": {
         "dam_id": {
-            "type": "string",
+            "type": "string_input",
             "require": true,
             "default_value": "0000"
         },
         "scenarios": {
-            "type": "string",
+            "type": "string_input",
             "require": true,
             "default_value": "NA"
         }
