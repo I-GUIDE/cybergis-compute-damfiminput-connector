@@ -5,11 +5,11 @@
     "slurm_input_rules": {
    
            "time": {
-                "max": 60,
-                "min": 5,
-                "default_value": 5,
-                "step": 5,
-                "unit": "Minutes"   
+                "max": 2,
+                "min": 1,
+                "default_value": 1,
+                "step": 1,
+                "unit": "Hours"   
             },
             "memory_per_cpu": {
                 "max": 1000,
@@ -18,15 +18,20 @@
                 "step": 200,
                 "unit": "MB"
             }
-      
     },
     "require_upload_data": true,
     "param_rules": {
-        "workflow_file": {
+        "dam_id": {
             "type": "string",
-            "require": true
+            "require": true,
+            "default_value": "0000"
+        },
+        "scenarios": {
+            "type": "string",
+            "require": true,
+            "default_value": "NA"
         }
     },
-    "supported_hpc": ["anvil_community"],
-    "default_hpc": "anvil_community"
+    "supported_hpc": ["expanse_community"],
+    "default_hpc": "expanse_community"
 }
