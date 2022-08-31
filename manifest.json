@@ -3,6 +3,7 @@
     "container": "damfiminput-connector",
     "pre_processing_stage": "python3 create_connector_yml.py",
     "execution_stage": "./main.sh",
+    "post_processing_stage": "./transfer_shared_outputs.sh",
     "slurm_input_rules": {
    
            "time": {
